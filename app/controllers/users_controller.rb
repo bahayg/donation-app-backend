@@ -1,7 +1,14 @@
 class UsersController < ApplicationController
     skip_before_action :authorized, only: [:create, :show]
+
+    def index
+        @user = User.all
+        render json: @user
+    end
+
     def create
         @user = User.create(user_params)
+        # byebug
         if @user.valid?
             render json: { user: UserSerializer.new(@user) }, status: :created
         else
@@ -9,13 +16,9 @@ class UsersController < ApplicationController
         end
     end
 
-    def index
-        @user = User.all
-        render json: @user
-    end
-
     private
-        def user_params
+
+    def user_params
         params.require(:user).permit(:username, :password, :is_admin)
     end
 
