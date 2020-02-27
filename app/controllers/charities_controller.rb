@@ -4,9 +4,14 @@ class CharitiesController < ApplicationController
         render json: @charities
     end
 
-    def show 
-        @charity = Charity.find(params[:id])
-        render json: @charity
+    
+    def get_charities_requests
+        # byebug
+        @charity =Charity.find(params[:charity_id])
+        @charity_requests = Request.where(charity_id: @charity.id)
+        # @users_charities = Charities.all.select{|charities| charity.user_id == @user.id}
+        render :json => @charity_requests
+        
     end
 
     def create
@@ -24,6 +29,7 @@ class CharitiesController < ApplicationController
     def destroy
         @charity = Charity.find(params[:id])
         @charity.destroy
+        render json: {message: "destroyed", id:@charity.id}
     end
 
     private
