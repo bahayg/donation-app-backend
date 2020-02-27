@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :charities
   resources :users
   resources :auth, only: [:create, :show]
+  get 'users/:id/charities', to: "users#get_users_charities"
   # post '/login', to: 'auth#create'
   # get '/profile', to: 'users#profile'
 

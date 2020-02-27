@@ -22,4 +22,7 @@ class AuthController < ApplicationController
           render json: {error: 'No user could be found'}, status: :unauthorized
         end
       end
+
+    #   def destroy
+    #   end
 end

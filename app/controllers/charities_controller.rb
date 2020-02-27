@@ -18,11 +18,13 @@ class CharitiesController < ApplicationController
         end
     end
 
+    # def update
+    # end
+
     def destroy
         @charity = Charity.find(params[:id])
         @charity.destroy
     end
-
 
     private
 

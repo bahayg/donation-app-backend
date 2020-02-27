@@ -1,10 +1,10 @@
 class UsersController < ApplicationController
     skip_before_action :authorized, only: [:create, :show]
 
-    def index
-        @user = User.all
-        render json: @user
-    end
+    # def index
+    #     @user = User.all
+    #     render json: @user
+    # end
 
     def create
         @user = User.create(user_params)
@@ -15,6 +15,17 @@ class UsersController < ApplicationController
             render json: { error: 'failed to create user' }, status: :not_acceptable
         end
     end
+
+    def get_users_charities
+        # byebug
+        @user =User.find(params[:id])
+        @user_charities = Charity.where(user_id: @user.id)
+        # @users_charities = Charities.all.select{|charities| charity.user_id == @user.id}
+        render :json => @user_charities
+    end
+
+    # def destroy
+    # end
 
     private
 
