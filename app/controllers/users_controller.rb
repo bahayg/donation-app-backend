@@ -24,8 +24,21 @@ class UsersController < ApplicationController
         render :json => @user_charities
     end
 
-    # def destroy
-    # end
+    def destroy
+        @user = User.find(params[:id])
+        @user_charities = Charity.where(user_id: @user.id)
+        @user_requests = Request.where(user_id: @user.id)
+        @user_charities.destroy_all
+        @user_requests.destroy_all
+        @user.destroy
+        render json: {message: "user and its charities/requests are destroyed", id: @user.id}
+    end
+
+    def update
+        @user = User.find(params[:id])
+        @user.update(user_params)
+        render :json => @user
+    end
 
     private
 

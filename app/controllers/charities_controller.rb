@@ -23,13 +23,18 @@ class CharitiesController < ApplicationController
         end
     end
 
-    # def update
-    # end
+    def update
+        @charity = Charity.find(params[:id])
+        @charity.update(charity_params)
+        render json: @charity
+    end
 
     def destroy
         @charity = Charity.find(params[:id])
+        @charity_requests = Request.where(charity_id: @charity.id)
+        @charity_requests.destroy_all
         @charity.destroy
-        render json: {message: "destroyed", id:@charity.id}
+        render json: {message: "charity and its requests are destroyed", id:@charity.id}
     end
 
     private
