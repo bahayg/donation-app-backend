@@ -6,8 +6,6 @@ Rails.application.routes.draw do
   get 'users/:id/charities', to: "users#get_users_charities"
   get 'users/:user_id/charities/:charity_id', to: "charities#get_charities_requests"
   get 'users/:user_id/requests', to: "users#get_users_requests"
-  # post '/login', to: 'auth#create'
-  # get '/profile', to: 'users#profile'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

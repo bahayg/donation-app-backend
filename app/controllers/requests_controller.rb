@@ -6,7 +6,6 @@ class RequestsController < ApplicationController
 
     def create
         @request = Request.create(request_params)
-        
         if @request
             render json: {request: RequestSerializer.new(@request), status: :created}
         else
@@ -15,12 +14,8 @@ class RequestsController < ApplicationController
     end
 
     def update
-        
         @request = Request.find(params[:id])
-     
         @request.update(request_params)
-
-       
         render json: @request
     end
 
@@ -35,5 +30,4 @@ class RequestsController < ApplicationController
     def request_params
         params.require(:request).permit(:user_id, :charity_id, :expiration_date, :info, :status)
     end
-
 end

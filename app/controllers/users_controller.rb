@@ -8,7 +8,6 @@ class UsersController < ApplicationController
 
     def create
         @user = User.create(user_params)
-        # byebug
         if @user.valid?
             render json: { user: UserSerializer.new(@user), jwt: issue_token }, status: :created
         else
@@ -17,7 +16,6 @@ class UsersController < ApplicationController
     end
 
     def get_users_charities
-        # byebug
         @user =User.find(params[:id])
         @user_charities = Charity.where(user_id: @user.id)
         # @users_charities = Charities.all.select{|charities| charity.user_id == @user.id}
@@ -25,7 +23,6 @@ class UsersController < ApplicationController
     end
 
     def get_users_requests
-       
         @user =User.find(params[:user_id])
         @user_requests = Request.joins("LEFT JOIN charities ON requests.charity_id=charities.id").where(["requests.user_id=%s", @user.id]).select("requests.*, charities.name")
         render :json => @user_requests
