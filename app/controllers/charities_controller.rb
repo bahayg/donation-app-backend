@@ -8,7 +8,10 @@ class CharitiesController < ApplicationController
     def get_charities_requests
         # byebug
         @charity =Charity.find(params[:charity_id])
-        @charity_requests = Request.where(charity_id: @charity.id)
+        @charity_requests = Request.where(charity_id: @charity.id).sort_by{|request| request.id}
+        
+        # byebug
+
         # @users_charities = Charities.all.select{|charities| charity.user_id == @user.id}
         render :json => @charity_requests
         

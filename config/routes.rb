@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :auth, only: [:create, :show]
   get 'users/:id/charities', to: "users#get_users_charities"
   get 'users/:user_id/charities/:charity_id', to: "charities#get_charities_requests"
+  get 'users/:user_id/requests', to: "users#get_users_requests"
   # post '/login', to: 'auth#create'
   # get '/profile', to: 'users#profile'
 

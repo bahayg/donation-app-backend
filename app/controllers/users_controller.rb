@@ -24,6 +24,13 @@ class UsersController < ApplicationController
         render :json => @user_charities
     end
 
+    def get_users_requests
+       
+        @user =User.find(params[:user_id])
+        @user_requests = Request.joins("LEFT JOIN charities ON requests.charity_id=charities.id").where(["requests.user_id=%s", @user.id]).select("requests.*, charities.name")
+        render :json => @user_requests
+    end
+
     def destroy
         @user = User.find(params[:id])
         @user_charities = Charity.where(user_id: @user.id)
