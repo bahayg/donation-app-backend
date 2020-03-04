@@ -24,7 +24,7 @@ class UsersController < ApplicationController
 
     def get_users_requests
         @user =User.find(params[:user_id])
-        @user_requests = Request.joins("LEFT JOIN charities ON requests.charity_id=charities.id").where(["requests.user_id=%s", @user.id]).select("requests.*, charities.name")
+        @user_requests = Request.joins("LEFT JOIN charities ON requests.charity_id=charities.id").where(["requests.user_id=%s", @user.id]).select("requests.*, charities.name").sort_by{|request| (request.expiration_date.split('/').join)}
         render :json => @user_requests
     end
 
