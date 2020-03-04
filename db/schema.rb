@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2020_02_20_234522) do
     t.string "image"
     t.string "address"
     t.string "city"
+    t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -31,6 +32,7 @@ ActiveRecord::Schema.define(version: 2020_02_20_234522) do
     t.string "expiration_date"
     t.string "info"
     t.string "status", default: "open"
+    t.string "category"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["charity_id"], name: "index_requests_on_charity_id"
@@ -41,6 +43,8 @@ ActiveRecord::Schema.define(version: 2020_02_20_234522) do
     t.string "username"
     t.string "password_digest"
     t.boolean "is_admin", default: false
+    t.string "email"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

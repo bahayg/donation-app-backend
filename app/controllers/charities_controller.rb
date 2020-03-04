@@ -12,6 +12,7 @@ class CharitiesController < ApplicationController
     end
 
     def create
+        # byebug
         @charity = Charity.create(charity_params)
         if @charity
             render json: { charity: CharitySerializer.new(@charity) }, status: :created
@@ -37,7 +38,7 @@ class CharitiesController < ApplicationController
     private
 
     def charity_params
-        params.require(:charity).permit(:user_id, :name, :image, :address, :city)
+        params.require(:charity).permit(:user_id, :name, :image, :address, :city, :description)
     end
 
 end 

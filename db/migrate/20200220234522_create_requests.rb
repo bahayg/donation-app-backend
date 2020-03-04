@@ -6,6 +6,7 @@ class CreateRequests < ActiveRecord::Migration[6.0]
       t.string :expiration_date
       t.string :info
       t.string :status, default: 'open'
+      t.string :category
 
       t.timestamps
     end

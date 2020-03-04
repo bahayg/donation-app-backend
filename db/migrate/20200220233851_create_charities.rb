@@ -6,6 +6,7 @@ class CreateCharities < ActiveRecord::Migration[6.0]
       t.string :image
       t.string :address
       t.string :city
+      t.string :description
 
       t.timestamps
     end

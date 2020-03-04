@@ -28,6 +28,6 @@ class RequestsController < ApplicationController
     private
 
     def request_params
-        params.require(:request).permit(:user_id, :charity_id, :expiration_date, :info, :status)
+        params.require(:request).permit(:user_id, :charity_id, :expiration_date, :info, :status, :category)
     end
 end
