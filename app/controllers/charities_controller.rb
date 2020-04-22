@@ -1,4 +1,5 @@
 class CharitiesController < ApplicationController
+    skip_before_action :authorized, only: [:index, :get_charities_requests]
     def index
         @charities = Charity.all
         render json: @charities

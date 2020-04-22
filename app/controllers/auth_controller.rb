@@ -1,5 +1,5 @@
 class AuthController < ApplicationController
-    skip_before_action :authorized, only: [:create, :show]
+    skip_before_action :authorized, only: [:create, :show, :index]
     # Login
       def create
         @user = User.find_by(username: params[:username])
