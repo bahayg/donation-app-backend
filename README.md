@@ -29,7 +29,7 @@ Features that take username, password, e-mail address, profile picture, and user
 * Run rails db:migrate
 * Run rails db:seed
 * Run rails s
-* Then, open your preferred web browser by navigating to "http://localhost:3000" to view it.
+* Create your account.
 
 Go to https://github.com/bahayg/donation-app-frontend for the frontend.
 
