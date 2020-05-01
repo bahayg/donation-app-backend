@@ -33,6 +33,7 @@ Features that take username, password, e-mail address, profile picture, and user
 
 Go to https://github.com/bahayg/donation-app-frontend for the frontend.
 
+Watch the demo at https://youtu.be/P3CpGR8q9cw
 <!-- ## Known Bugs
 
 * Work in progress; there are no known bugs at this time. -->
