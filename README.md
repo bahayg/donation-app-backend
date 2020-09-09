@@ -25,10 +25,10 @@ Features that take username, password, e-mail address, profile picture, and user
 
 * Fork and clone this repository.
 * Navigate to the top level of the cloned directory.
-* Run bundle install
-* Run rails db:migrate
-* Run rails db:seed
-* Run rails s
+* Run `bundle install`
+* Run `rails db:migrate`
+* Run `rails db:seed`
+* Run `rails s`
 * Create your account.
 
 Go to https://github.com/bahayg/donation-app-frontend for the frontend.
