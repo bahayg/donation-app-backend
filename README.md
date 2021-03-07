@@ -8,9 +8,9 @@
 
 Built an application to connect donors to local charities and nonprofit organizations who are looking for volunteers.
 
-### Website has:
+## Features
 
-Features that take username, user type, password, e-mail address, and a profile picture to create a new user and do the followings:
+Website takes username, user type, password, e-mail address, and a profile picture to create a new user and do the followings:
 
 - Stores encrypted user information client-side.
 - Lets users (admin or not) create / edit / delete their account.
@@ -42,17 +42,17 @@ React.js, JavaScript, Ruby, Ruby on Rails, ActiveRecord, PostgreSQL, JWT, Semant
 
 ##
 
-Watch the [Demo] (https://youtu.be/P3CpGR8q9cw)
+Watch the [Demo](https://youtu.be/P3CpGR8q9cw)
 
-Try it [Live] (http://reunitedhands.bahaygb.com/)
+Try it [Live](http://reunitedhands.bahaygb.com/)
 
-Go to [Frontend Repo] (https://github.com/bahayg/donation-app-frontend)
+Go to [Frontend Repo](https://github.com/bahayg/donation-app-frontend)
 
-## Support and Contact Details
+### Support and Contact Details
 
 bahayg@gmail.com
 
-### License
+#### License
 
 Copyright (c) 2020 Bahay Gulle Bilgi.
 
