@@ -48,15 +48,11 @@ Try it [Live](http://reunitedhands.bahaygb.com/)
 
 Go to [Frontend Repo](https://github.com/bahayg/donation-app-frontend)
 
-### Support and Contact Details
-
-##
+## Support and Contact Details
 
 bahayg@gmail.com
 
-### License
-
-##
+## License
 
 Copyright (c) 2020 Bahay Gulle Bilgi.
 
