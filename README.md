@@ -2,7 +2,7 @@
 
 <!-- #### _"Reunited Hands" website is built as Final Project at Flatiron (03/05/2020)_ -->
 
-### _** By Bahay Gulle Bilgi**_
+### _** By Bahay Gulle Bilgi **_
 
 ## Description
 
@@ -40,7 +40,7 @@ Website takes username, user type, password, e-mail address, and a profile pictu
 
 React.js, JavaScript, Ruby, Ruby on Rails, ActiveRecord, PostgreSQL, JWT, Semantic UI React, Heroku, and Git.
 
-##
+## Links
 
 Watch the [Demo](https://youtu.be/P3CpGR8q9cw)
 
@@ -52,7 +52,7 @@ Go to [Frontend Repo](https://github.com/bahayg/donation-app-frontend)
 
 bahayg@gmail.com
 
-#### License
+### License
 
 Copyright (c) 2020 Bahay Gulle Bilgi.
 
