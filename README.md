@@ -1,8 +1,8 @@
-# _Reunited Hands_
+# Reunited Hands
 
 <!-- #### _"Reunited Hands" website is built as Final Project at Flatiron (03/05/2020)_ -->
 
-### _** By Bahay Gulle Bilgi **_
+<!-- ### _** By Bahay Gulle Bilgi **_ -->
 
 ## Description
 
@@ -19,8 +19,8 @@ Website takes username, user type, password, e-mail address, and a profile pictu
 - Returns a list of nonprofits in the selected city.
 - Shows users the details of the selected charity and listed requests by that charity.
 - Helps users find a request item to donate or cancel a donation.
-- Allows admins view charities and requests they created, and approve pending donations in their profile pages.
-- Lists the request items that users selected to donate in their profile pages.
+- Allows admins view charities and requests they created, and approve pending donations on their profile pages.
+- Lists the request items that users selected to donate on their profile pages.
 
 <!-- ## Setup/Installation Requirements
 
@@ -36,7 +36,7 @@ Website takes username, user type, password, e-mail address, and a profile pictu
 
 * Work in progress; there are no known bugs at this time. -->
 
-## Technologies Used
+## Technologies & Tools
 
 React.js, JavaScript, Ruby, Ruby on Rails, ActiveRecord, PostgreSQL, JWT, Semantic UI React, Heroku, and Git.
 
