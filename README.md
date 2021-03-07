@@ -4,7 +4,7 @@
 
 <!-- ### _** By Bahay Gulle Bilgi **_ -->
 
-## Description
+<!-- ## Description -->
 
 Built an application to connect donors to local charities and nonprofit organizations who are looking for volunteers.
 
